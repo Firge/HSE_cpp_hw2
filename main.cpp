@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <cstring>
+#include <memory>
 
 struct Triplet_int {
     int a, b, c;
