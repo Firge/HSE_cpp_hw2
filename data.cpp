@@ -1,3 +1,4 @@
+#include <algorithm>
 #include "VectorField.cpp"
 
 template<typename T, typename T1>
