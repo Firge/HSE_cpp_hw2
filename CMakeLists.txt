@@ -14,8 +14,8 @@ add_compile_definitions(
 add_executable(generator generator.cpp)
 
 add_custom_command(
-        TARGET generator POST_BUILD  # Построить после того, как generator собран
-        COMMAND ./generator         # Запускаем исп файл 1
+        TARGET generator POST_BUILD
+        COMMAND ./generator
         COMMENT "Running generator"
 )
 
