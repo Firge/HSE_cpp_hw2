@@ -1,6 +1,7 @@
 using namespace std;
 #include <type_traits>
-
+#include <memory>
+#include <array>
 
 template<int N, int M>
 class Fixed {
@@ -79,7 +80,7 @@ public:
 
 
 
-constexpr std::array<pair<int, int>, 4> deltas{{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}};
+constexpr std::array<std::pair<int, int>, 4> deltas{{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}};
 
 template<int N, int M>
 static constexpr Fixed<N, M> inf = Fixed<N, M>::from_raw(std::numeric_limits<int32_t>::max());
